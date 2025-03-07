@@ -1,77 +1,57 @@
-<UXML
-    xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:engine="UnityEngine.UIElements" 
-    xmlns:custom="CustomElements"
-    editor="UnityEditor.UIElements" 
-    noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" 
-    editor-extension-mode="False">
-    
-    <Style src="project://database/Assets/UI Templates/Multiplayer/GameView/GameView_Styles.uss" />
-    
-    <!-- Game View -->
+<UXML xmlns:engine="UnityEngine.UIElements" xmlns:custom="CustomElements" xsi="http://www.w3.org/2001/XMLSchema-instance" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Templates/Multiplayer/GameView/GameView_Styles.uss?fileID=7433441132597879392&amp;guid=f6ff5376841e45a0aa2291ee01738055&amp;type=3#GameView_Styles" />
     <engine:VisualElement name="gameview-container" class="gameview-container">
-        
         <engine:VisualElement name="ping-container" class="ping-container">
-            <engine:Label text="27ms" name="ping-label" class="ping-label"/>
+            <engine:Label text="27ms" name="ping-label" class="ping-label" />
         </engine:VisualElement>
-        
-        
-        <!-- Top bar -->
         <engine:VisualElement name="top-bar" class="top-bar">
             <engine:VisualElement name="team-portraits" class="team-portraits">
                 <engine:VisualElement name="team-portrait-container" class="team-portrait-container">
-                    <engine:VisualElement name="team-portrait" class ="team-portrait"/>
-                    <engine:VisualElement name="team-portrait-text" class ="team-portrait-text">
-                        <engine:Label text="Team A" name="team-portrait-label" class="team-portrait-label"/>
+                    <engine:VisualElement name="team-portrait" class="team-portrait" />
+                    <engine:VisualElement name="team-portrait-text" class="team-portrait-text">
+                        <engine:Label text="Team A" name="team-portrait-label" class="team-portrait-label" />
                     </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="team-portrait-container" class="team-portrait-container">
-                    <engine:VisualElement name="team-portrait" class ="team-portrait"/>
-                    <engine:VisualElement name="team-portrait-text" class ="team-portrait-text">
-                        <engine:Label text="Team B" name="team-portrait-label" class="team-portrait-label"/>
+                    <engine:VisualElement name="team-portrait" class="team-portrait" />
+                    <engine:VisualElement name="team-portrait-text" class="team-portrait-text">
+                        <engine:Label text="Team B" name="team-portrait-label" class="team-portrait-label" />
                     </engine:VisualElement>
                 </engine:VisualElement>
             </engine:VisualElement>
-            
             <engine:VisualElement name="game-timer-container" class="game-timer-container">
-                <engine:Label text="0.0s" name="game-timer-label" class="game-timer-label"/>
+                <engine:Label text="0.0s" name="game-timer-label" class="game-timer-label" />
             </engine:VisualElement>
-            
         </engine:VisualElement>
-        
-        <!-- Start Countdown timer -->
-        <custom:CountdownTimerElement name="countdown-timer" myString="test"/>
-        
-        <!-- Player center -->
+        <custom:CountdownTimerElement name="countdown-timer" myString="test" />
         <engine:VisualElement name="player-center" class="player-center-container">
-            
-            <!-- Skills container -->
-            <engine:VisualElement name="skills-container" class="skills-container">
+            <engine:VisualElement name="skills-container" class="skills-container" style="top: -14px;">
                 <engine:VisualElement name="q-box" class="skill">
-                    <custom:RadialCooldownElement name="radial-cooldown" key="Q" class="q-skill"/>
+                    <custom:RadialCooldownElement name="radial-cooldown" key="Q" class="q-skill" />
                     <engine:VisualElement class="skill-label">
-                        <engine:Label text="Q"/>
+                        <engine:Label text="Q" />
                     </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="w-box" class="skill">
-                    <custom:RadialCooldownElement name="radial-cooldown" key="W" class="w-skill"/>
+                    <custom:RadialCooldownElement name="radial-cooldown" key="W" class="w-skill" />
                     <engine:VisualElement class="skill-label">
-                        <engine:Label text="W"/>
+                        <engine:Label text="W" />
                     </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="e-box" class="skill">
-                    <custom:RadialCooldownElement name="radial-cooldown" key="E" class="e-skill"/>
+                    <custom:RadialCooldownElement name="radial-cooldown" key="E" class="e-skill" />
                     <engine:VisualElement class="skill-label">
-                        <engine:Label text="E"/>
+                        <engine:Label text="E" />
                     </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="r-box" class="skill">
-                    <custom:RadialCooldownElement name="radial-cooldown" key="R" class="r-skill"/>
+                    <custom:RadialCooldownElement name="radial-cooldown" key="R" class="r-skill" />
                     <engine:VisualElement class="skill-label">
-                        <engine:Label text="R"/>
+                        <engine:Label text="R" />
                     </engine:VisualElement>
                 </engine:VisualElement>
             </engine:VisualElement>
+<<<<<<< Updated upstream
             
             <!-- Resource Bars -->
             <engine:VisualElement class="resource-bars">
@@ -112,29 +92,44 @@
                         <engine:VisualElement class="stat-icon range"/>
                         <engine:Label text="10" class="champion-stat-label"/>
                     </engine:VisualElement>
+=======
+            <engine:VisualElement name="HealthBar" class="center-manabar" style="background-color: rgba(10, 161, 255, 0); border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; background-size: 100% 100%; height: 100px; align-items: stretch; align-content: auto; align-self: center; justify-content: space-between; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/MagicBar.png?fileID=2800000&amp;guid=c8933465b7c6aaf43885443c2c9449c1&amp;type=3#MagicBar&quot;);">
+                <engine:VisualElement name="Icon" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/Sprites/Healthicon.png?fileID=2800000&amp;guid=04c4e36fb3d5d4c409b8a43838d4c3d9&amp;type=3#Healthicon&quot;); background-size: 10% 100%; left: -5px; flex-direction: column; flex-shrink: initial; align-content: flex-start; background-position-x: left 0; -unity-background-scale-mode: scale-to-fit; width: 40px; top: -1px;" />
+                <engine:VisualElement name="HealthValue" style="flex-grow: initial; background-color: rgb(255, 0, 4); height: 10px; top: 9px; left: -19px; flex-basis: initial; flex-shrink: initial; width: 345px;">
+                    <engine:Label text="100/100" name="HealthValueLabel" style="font-size: 12px;" />
+>>>>>>> Stashed changes
                 </engine:VisualElement>
-                
-                <engine:VisualElement class="champion-stats stats-right">
-                    <engine:VisualElement class="champion-stat armor">
-                        <engine:VisualElement class="stat-icon armor"/>
-                        <engine:Label text="20" class="champion-stat-label"/>
+            </engine:VisualElement>
+            <engine:VisualElement name="MagicBar" class="center-manabar" style="background-color: rgba(10, 161, 255, 0); border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; background-size: 100% 100%; height: 100px; align-items: stretch; align-content: auto; align-self: center; justify-content: space-between; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/MagicBar.png?fileID=2800000&amp;guid=c8933465b7c6aaf43885443c2c9449c1&amp;type=3#MagicBar&quot;);">
+                <engine:VisualElement name="Icon" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/Sprites/MagicIcon_1.png?fileID=2800000&amp;guid=4d45ef39b684fde4eb8607666f442cde&amp;type=3#MagicIcon_1&quot;); background-size: 10% 100%; left: -5px; flex-direction: column; flex-shrink: initial; align-content: flex-start; background-position-x: left 0; -unity-background-scale-mode: scale-to-fit; width: 40px; top: -1px;" />
+                <engine:VisualElement name="MagicValue" style="flex-grow: initial; background-color: rgb(0, 146, 255); height: 10px; top: 9px; left: -19px; flex-basis: initial; flex-shrink: initial; width: 345px;">
+                    <engine:Label text="100/100" name="MagivValueLabel" style="font-size: 12px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement class="portrait-container" style="background-image: url(&quot;project://database/Assets/Sprites/PlayerHead.png?fileID=2800000&amp;guid=22d9f7db109bfd34e8303ae4e3582094&amp;type=3#PlayerHead&quot;); border-top-width: 0; border-left-width: 0; border-right-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-size: 100% 80%; top: 20px; bottom: 0;">
+                <engine:VisualElement class="portrait" style="background-size: 107% 108%; width: 64%; height: 60%; left: 24px; top: 25px;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="VisualElement" class="champion-stats-container" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 205px; left: -197px; bottom: 10px; background-image: url(&quot;project://database/Assets/Sprites/StatWindow.png?fileID=2800000&amp;guid=1c965519abc613b4195559682b279279&amp;type=3#StatWindow&quot;); background-color: rgba(0, 0, 0, 0); background-size: 100% 100%; height: 180px;">
+                <engine:VisualElement class="champion-stats stats-left" style="width: 56%; white-space: normal; -unity-text-align: upper-left; justify-content: flex-start; align-items: auto; align-content: auto; align-self: stretch; left: 40px; bottom: 0; top: 22px; right: 0; flex-direction: column; height: 119px;">
+                    <engine:VisualElement name="MagicStat" class="champion-stat damage" style="width: 99%; padding-bottom: 3px;">
+                        <engine:VisualElement class="stat-icon damage" style="background-image: url(&quot;project://database/Assets/Sprites/MagicIcon.png?fileID=21300000&amp;guid=db8cd98cf5c7de341875490bf5cde337&amp;type=3#MagicIcon&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0); width: 20%; height: 100%; align-self: flex-start; align-items: flex-start; background-position-x: center 0; white-space: normal;" />
+                        <engine:Label text="MGK" name="DEF_Label" emoji-fallback-support="true" style="padding-left: 0; font-size: 14px;" />
+                        <engine:Label text="5" class="champion-stat-label" style="padding-left: 0; background-image: url(&quot;project://database/Assets/Sprites/Ball.png?fileID=2800000&amp;guid=a0f8d36f7eb130f44b7d12bd3d6aff62&amp;type=3#Ball&quot;); width: 20px;" />
                     </engine:VisualElement>
-                    <engine:VisualElement class="champion-stat damage">
-                        <engine:VisualElement class="stat-icon damage"/>
-                        <engine:Label text="55" class="champion-stat-label"/>
+                    <engine:VisualElement name="MagicStat" class="champion-stat damage" style="width: 99%; padding-bottom: 3px;">
+                        <engine:VisualElement class="stat-icon damage" style="background-image: url(&quot;project://database/Assets/Sprites/DefenceIcon.png?fileID=21300000&amp;guid=92f0baa6044869d419af1b91299ad55b&amp;type=3#DefenceIcon&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0); width: 20%; height: 100%; align-self: flex-start; align-items: flex-start; background-position-x: center 0; white-space: normal;" />
+                        <engine:Label text="DEF" name="DEF_Label" emoji-fallback-support="true" style="padding-left: 0; font-size: 14px;" />
+                        <engine:Label text="5" class="champion-stat-label" style="padding-left: 0; background-image: url(&quot;project://database/Assets/Sprites/Ball.png?fileID=2800000&amp;guid=a0f8d36f7eb130f44b7d12bd3d6aff62&amp;type=3#Ball&quot;); width: 20px;" />
                     </engine:VisualElement>
-                    <engine:VisualElement class="champion-stat movespeed">
-                        <engine:VisualElement class="stat-icon movespeed"/>
-                        <engine:Label text="20" class="champion-stat-label"/>
-                    </engine:VisualElement>
-                    <engine:VisualElement class="champion-stat range">
-                        <engine:VisualElement class="stat-icon range"/>
-                        <engine:Label text="10" class="champion-stat-label"/>
+                    <engine:VisualElement name="MagicStat" class="champion-stat damage" style="width: 99%; padding-bottom: 3px;">
+                        <engine:VisualElement class="stat-icon damage" style="background-image: url(&quot;project://database/Assets/Sprites/OtherIcon.png?fileID=21300000&amp;guid=a000adc5fad59c9469fc75791874b244&amp;type=3#OtherIcon&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0); width: 20%; height: 100%; align-self: flex-start; align-items: flex-start; background-position-x: center 0; white-space: normal;" />
+                        <engine:Label text="OTHER" name="DEF_Label" emoji-fallback-support="true" style="padding-left: 0; font-size: 14px;" />
+                        <engine:Label text="5" class="champion-stat-label" style="padding-left: 0; background-image: url(&quot;project://database/Assets/Sprites/Ball.png?fileID=2800000&amp;guid=a0f8d36f7eb130f44b7d12bd3d6aff62&amp;type=3#Ball&quot;); width: 20px;" />
                     </engine:VisualElement>
                 </engine:VisualElement>
             </engine:VisualElement>
-            
         </engine:VisualElement>
+<<<<<<< Updated upstream
         
         <!-- Mini Map -->
         <custom:MinimapElement name="minimap" class="minimap"/>
@@ -143,6 +138,9 @@
         <!-- Chat box -->
         <custom:ChatBoxElement name="chat" class="chatbox"/>
         
+=======
+        <custom:MinimapElement name="minimap" class="minimap" />
+        <custom:ChatBoxElement name="chat" class="chatbox" />
+>>>>>>> Stashed changes
     </engine:VisualElement>
-    
 </UXML>
