@@ -61,6 +61,8 @@ public class Lux_E_Mis_Net : NetworkAbilityBehaviour {
 
     private void Detonate(bool recast) {
 
+        Debug.Log("** Detonate Called **");
+
         var networkObjectId = GetComponent<NetworkObject>().NetworkObjectId;
         
         if (ActiveCollision != null && IsColliding) {
@@ -68,6 +70,8 @@ public class Lux_E_Mis_Net : NetworkAbilityBehaviour {
             var playerNetworkObject = ActiveCollision.gameObject.GetComponent<NetworkObject>();
             var enemyClientId = playerNetworkObject.OwnerClientId;
             var target = ActiveCollision.gameObject.GetComponent<LuxPlayerController>();
+
+            Debug.Log("** The target is **" + target.gameObject.name);
 
             HasHit = true;
             target.health.TakeDamage(Ability.damage);

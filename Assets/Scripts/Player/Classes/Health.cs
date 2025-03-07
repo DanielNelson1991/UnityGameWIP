@@ -21,6 +21,9 @@ public class Health : NetworkBehaviour {
     }
     
     public void TakeDamage(float amount) {
+
+        Debug.Log(_playerScript.gameObject.name + " has taken damage in the amount of " + amount);
+
         if (IsServer) {
             currentHealth.Value -= amount;
             if (currentHealth.Value < 0) currentHealth.Value = 0;

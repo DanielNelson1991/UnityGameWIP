@@ -57,6 +57,9 @@ public class LuxPlayerController : LuxController {
     
     // Camera
     public Camera mainCamera;
+
+    public int m_Strength = 0;
+    public int m_Speed = 0;
     
     private void Awake() {
         playerType = PlayerType.Player;

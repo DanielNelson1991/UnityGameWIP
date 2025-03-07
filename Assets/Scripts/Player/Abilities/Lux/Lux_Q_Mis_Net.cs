@@ -52,6 +52,8 @@ public class Lux_Q_Mis_Net : NetworkAbilityBehaviour {
     
     protected override void HandleServerCollision(Collision collision) {
 
+        Debug.Log("** Handle Server Collision **");
+
         var prefabNetworkObjectId = GetComponent<NetworkObject>().NetworkObjectId;
         var collisionPos = collision.gameObject.transform.position;
         var playerNetworkObject = collision.gameObject.GetComponent<NetworkObject>();
