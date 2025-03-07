@@ -51,65 +51,22 @@
                     </engine:VisualElement>
                 </engine:VisualElement>
             </engine:VisualElement>
-<<<<<<< Updated upstream
-            
-            <!-- Resource Bars -->
-            <engine:VisualElement class="resource-bars">
-                <engine:VisualElement class="resource-bar-container">
-                    <engine:Label text="100/100" class="resource-bar-label"/>
-                    <engine:VisualElement class="resource-bar health"/>
-                </engine:VisualElement>
-                <engine:VisualElement class="resource-bar-container">
-                    <engine:Label text="100/100" class="resource-bar-label"/>
-                    <engine:VisualElement class="resource-bar mana"/>
-                </engine:VisualElement>
-            </engine:VisualElement>
-            
-            <!-- Champion Portrait -->
-            <engine:VisualElement class="portrait-container">
-                <engine:VisualElement class="portrait"/>
-                <engine:VisualElement class="player-level-container">
-                    <engine:Label text="7" class="player-level-label"/>
-                </engine:VisualElement>
-            </engine:VisualElement>
-            
-            <!-- Champion Stats -->
-            <engine:VisualElement class="champion-stats-container">
-                <engine:VisualElement class="champion-stats stats-left">
-                    <engine:VisualElement class="champion-stat armor">
-                        <engine:VisualElement class="stat-icon armor"/>
-                        <engine:Label text="10" class="champion-stat-label"/>
-                    </engine:VisualElement>
-                    <engine:VisualElement class="champion-stat damage">
-                        <engine:VisualElement class="stat-icon damage"/>
-                        <engine:Label text="5" class="champion-stat-label"/>
-                    </engine:VisualElement>
-                    <engine:VisualElement class="champion-stat movespeed">
-                        <engine:VisualElement class="stat-icon movespeed"/>
-                        <engine:Label text="55" class="champion-stat-label"/>
-                    </engine:VisualElement>
-                    <engine:VisualElement class="champion-stat range">
-                        <engine:VisualElement class="stat-icon range"/>
-                        <engine:Label text="10" class="champion-stat-label"/>
-                    </engine:VisualElement>
-=======
-            <engine:VisualElement name="HealthBar" class="center-manabar" style="background-color: rgba(10, 161, 255, 0); border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; background-size: 100% 100%; height: 100px; align-items: stretch; align-content: auto; align-self: center; justify-content: space-between; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/MagicBar.png?fileID=2800000&amp;guid=c8933465b7c6aaf43885443c2c9449c1&amp;type=3#MagicBar&quot;);">
+            <engine:VisualElement name="HealthBar" class="center-manabar" style="background-color: rgba(255, 255, 255, 0); border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; background-size: 100% 100%; height: 100px; align-items: stretch; align-content: auto; align-self: center; justify-content: space-between; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/MagicBar.png?fileID=2800000&amp;guid=c8933465b7c6aaf43885443c2c9449c1&amp;type=3#MagicBar&quot;); width: 400px; top: -5px;">
                 <engine:VisualElement name="Icon" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/Sprites/Healthicon.png?fileID=2800000&amp;guid=04c4e36fb3d5d4c409b8a43838d4c3d9&amp;type=3#Healthicon&quot;); background-size: 10% 100%; left: -5px; flex-direction: column; flex-shrink: initial; align-content: flex-start; background-position-x: left 0; -unity-background-scale-mode: scale-to-fit; width: 40px; top: -1px;" />
-                <engine:VisualElement name="HealthValue" style="flex-grow: initial; background-color: rgb(255, 0, 4); height: 10px; top: 9px; left: -19px; flex-basis: initial; flex-shrink: initial; width: 345px;">
-                    <engine:Label text="100/100" name="HealthValueLabel" style="font-size: 12px;" />
->>>>>>> Stashed changes
+                <engine:VisualElement name="HealthBarBG" style="flex-grow: initial; background-color: rgb(255, 0, 0); height: 14px; left: -22px; top: 13px; flex-shrink: initial; flex-basis: initial; width: 344px; align-items: center; -unity-text-align: middle-left; font-size: 12px;">
+                    <engine:Label text="100/100" name="HealthValue" style="background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; margin-right: 0;" />
                 </engine:VisualElement>
             </engine:VisualElement>
-            <engine:VisualElement name="MagicBar" class="center-manabar" style="background-color: rgba(10, 161, 255, 0); border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; background-size: 100% 100%; height: 100px; align-items: stretch; align-content: auto; align-self: center; justify-content: space-between; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/MagicBar.png?fileID=2800000&amp;guid=c8933465b7c6aaf43885443c2c9449c1&amp;type=3#MagicBar&quot;);">
+            <engine:VisualElement name="MagicBar" class="center-manabar" style="background-color: rgba(255, 255, 255, 0); border-left-width: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; background-size: 100% 100%; height: 100px; align-items: stretch; align-content: auto; align-self: center; justify-content: space-between; flex-direction: row; background-image: url(&quot;project://database/Assets/Sprites/MagicBar.png?fileID=2800000&amp;guid=c8933465b7c6aaf43885443c2c9449c1&amp;type=3#MagicBar&quot;); width: 400px; top: 0;">
                 <engine:VisualElement name="Icon" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/Sprites/MagicIcon_1.png?fileID=2800000&amp;guid=4d45ef39b684fde4eb8607666f442cde&amp;type=3#MagicIcon_1&quot;); background-size: 10% 100%; left: -5px; flex-direction: column; flex-shrink: initial; align-content: flex-start; background-position-x: left 0; -unity-background-scale-mode: scale-to-fit; width: 40px; top: -1px;" />
-                <engine:VisualElement name="MagicValue" style="flex-grow: initial; background-color: rgb(0, 146, 255); height: 10px; top: 9px; left: -19px; flex-basis: initial; flex-shrink: initial; width: 345px;">
-                    <engine:Label text="100/100" name="MagivValueLabel" style="font-size: 12px;" />
+                <engine:VisualElement name="MagicBarBG" style="flex-grow: initial; background-color: rgb(0, 140, 255); height: 14px; left: -22px; top: 13px; flex-shrink: initial; flex-basis: initial; width: 344px; align-items: center; -unity-text-align: middle-left; font-size: 12px;">
+                    <engine:Label text="100/100" name="MagicValue" style="background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); padding-top: 0; padding-bottom: 0; padding-right: 0; padding-left: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; margin-right: 0;" />
                 </engine:VisualElement>
             </engine:VisualElement>
-            <engine:VisualElement class="portrait-container" style="background-image: url(&quot;project://database/Assets/Sprites/PlayerHead.png?fileID=2800000&amp;guid=22d9f7db109bfd34e8303ae4e3582094&amp;type=3#PlayerHead&quot;); border-top-width: 0; border-left-width: 0; border-right-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-size: 100% 80%; top: 20px; bottom: 0;">
+            <engine:VisualElement name="PlayerIcon" class="portrait-container" style="background-image: url(&quot;project://database/Assets/Sprites/PlayerHead.png?fileID=2800000&amp;guid=22d9f7db109bfd34e8303ae4e3582094&amp;type=3#PlayerHead&quot;); border-top-width: 0; border-left-width: 0; border-right-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-size: 100% 80%; top: 20px; bottom: 0;">
                 <engine:VisualElement class="portrait" style="background-size: 107% 108%; width: 64%; height: 60%; left: 24px; top: 25px;" />
             </engine:VisualElement>
-            <engine:VisualElement name="VisualElement" class="champion-stats-container" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 205px; left: -197px; bottom: 10px; background-image: url(&quot;project://database/Assets/Sprites/StatWindow.png?fileID=2800000&amp;guid=1c965519abc613b4195559682b279279&amp;type=3#StatWindow&quot;); background-color: rgba(0, 0, 0, 0); background-size: 100% 100%; height: 180px;">
+            <engine:VisualElement name="StatsWindow" class="champion-stats-container" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 205px; left: -197px; bottom: 10px; background-image: url(&quot;project://database/Assets/Sprites/StatWindow.png?fileID=2800000&amp;guid=1c965519abc613b4195559682b279279&amp;type=3#StatWindow&quot;); background-color: rgba(0, 0, 0, 0); background-size: 100% 100%; height: 180px;">
                 <engine:VisualElement class="champion-stats stats-left" style="width: 56%; white-space: normal; -unity-text-align: upper-left; justify-content: flex-start; align-items: auto; align-content: auto; align-self: stretch; left: 40px; bottom: 0; top: 22px; right: 0; flex-direction: column; height: 119px;">
                     <engine:VisualElement name="MagicStat" class="champion-stat damage" style="width: 99%; padding-bottom: 3px;">
                         <engine:VisualElement class="stat-icon damage" style="background-image: url(&quot;project://database/Assets/Sprites/MagicIcon.png?fileID=21300000&amp;guid=db8cd98cf5c7de341875490bf5cde337&amp;type=3#MagicIcon&quot;); background-size: contain; -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0); width: 20%; height: 100%; align-self: flex-start; align-items: flex-start; background-position-x: center 0; white-space: normal;" />
@@ -129,18 +86,9 @@
                 </engine:VisualElement>
             </engine:VisualElement>
         </engine:VisualElement>
-<<<<<<< Updated upstream
-        
-        <!-- Mini Map -->
-        <custom:MinimapElement name="minimap" class="minimap"/>
-        <engine:VisualElement class="minimap-corner"/>
-        
-        <!-- Chat box -->
-        <custom:ChatBoxElement name="chat" class="chatbox"/>
-        
-=======
         <custom:MinimapElement name="minimap" class="minimap" />
         <custom:ChatBoxElement name="chat" class="chatbox" />
->>>>>>> Stashed changes
+        <custom:MinimapElement name="minimap" class="minimap" />
+        <custom:ChatBoxElement name="chat" class="chatbox" />
     </engine:VisualElement>
 </UXML>
